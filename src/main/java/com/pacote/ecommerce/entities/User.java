@@ -1,11 +1,14 @@
 package com.pacote.ecommerce.entities;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 /**
@@ -18,14 +21,17 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
     private String name;
     private String email;
     private String phone;
     private LocalDate birthDate;
     private String password;
 
-    public User() {
+    @OneToMany(mappedBy = "client")
+    private List<Order> orders = new ArrayList<>();
 
+    public User() {
     }
 
     public User(long id, String name, String email, String phone, LocalDate birthDate, String password) {
@@ -83,5 +89,9 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public List<Order> getOrders() {
+        return orders;
     }
 }
