@@ -1,4 +1,6 @@
+/home/vytor/projects/e-commerce/src/main/java/com/pacote/ecommerce/entities/Category.java
 /home/vytor/projects/e-commerce/src/main/java/com/pacote/ecommerce/entities/Payment.java
+/home/vytor/projects/e-commerce/src/main/java/com/pacote/ecommerce/entities/Product.java
 /home/vytor/projects/e-commerce/src/main/java/com/pacote/ecommerce/ECommerceApplication.java
 /home/vytor/projects/e-commerce/src/main/java/com/pacote/ecommerce/entities/Order.java
 /home/vytor/projects/e-commerce/src/main/java/com/pacote/ecommerce/entities/OrderStatus.java

@@ -1,5 +1,7 @@
 com/pacote/ecommerce/ECommerceApplication.class
 com/pacote/ecommerce/entities/Payment.class
+com/pacote/ecommerce/entities/Product.class
 com/pacote/ecommerce/entities/OrderStatus.class
 com/pacote/ecommerce/entities/Order.class
+com/pacote/ecommerce/entities/Category.class
 com/pacote/ecommerce/entities/User.class
